@@ -1,50 +1,176 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #BABD8D;
-}
-
-.navbar {
+  margin: 0px;
+  padding: 0px;
   background-color: #FFEFE7;
-  width: 100%;
-  height: 60px;
-  display: flex;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
-.nav-izq {
-  background-color: red;
-  width: 50%;
+nav {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+nav .nav-izq, nav .nav-der {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-
-.nav-der {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 50%;
+nav .navbar p {
+  /* margin: 0 10px; */
+  font-size: 1em;
+  padding-left: 30px;
 }
-
-.navbar p {
-  margin: 0 10px;
-}
-
-.btn-profile, .btn-fav, .btn-carrito {
-  background-color: blue;
+nav .btn-profile, nav .btn-fav, nav .btn-carrito {
   width: 50px;
   height: 50px;
   color: #7C6A0A;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFDAC6;
 }
 
-/* main {
-    background-color: $primary-color;
-} */
+article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+  background-color: #FFDAC6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+article .impact-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  background-color: #FFDAC6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+article .impact-section h1 {
+  color: #7C6A0A;
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+article .impact-section p {
+  color: #7C6A0A;
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+article .impact-section button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #BABD8D;
+  color: #7C6A0A;
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+article .image-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article .image-section img {
+  width: 90%;
+  height: 100%;
+}
+
+.healthcare, .furniture, .titulo-info-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.container-tarjetas {
+  display: flex;
+  flex-wrap: wrap; /* se van acomodando las card segun la pantalla */
+  justify-content: center;
+  align-items: center;
+}
+.container-tarjetas .tarjeta {
+  width: 250px; /* 14vw */
+  height: auto; /* 14v */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+  background-color: #FFDAC6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-tarjetas .tarjeta .btn-fav-tarjeta {
+  /* con position, left, top --> ubico el btn */
+  position: relative;
+  left: 100px;
+  top: -10px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  /* alineo el svg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-tarjetas .tarjeta .img-tarjeta {
+  width: 95%;
+  height: 100%;
+}
+.container-tarjetas .tarjeta h3 {
+  color: #7C6A0A;
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+.container-tarjetas .tarjeta p {
+  color: #7C6A0A;
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+
+.container-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-info div {
+  width: 28vw;
+  height: 25vh;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+  background-color: #FFDAC6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-info div img {
+  width: 90px;
+  height: 90px;
+}
+.container-info div p {
+  color: #7C6A0A;
+  margin: 0.5em 0;
+}
+
 /* footer {
     display: flex;
     $background: orange;
