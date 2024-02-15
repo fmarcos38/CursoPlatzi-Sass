@@ -188,30 +188,35 @@ article .image-section img {
 .galery .img-galery img {
   width: 100%;
   height: 100%;
+  /* width: 28vw;
+  height: 35vh; */
+}
+.galery .img-galery img:hover {
+  transform: scale(1.1);
 }
 
 .map {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 footer {
   display: row;
-  background-color: #FFDAC6;
+  background-color: rgb(255, 128, 0);
   height: auto;
 }
 footer h3 {
   color: #7C6A0A;
   font-size: 1.5em;
-  margin-left: 20px;
-  margin-top: 10px;
+  padding: 0.8em;
 }
 footer .container-info-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 footer .social-media {
   display: flex;
